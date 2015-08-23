@@ -1,0 +1,148 @@
+@import "https://fonts.googleapis.com/icon?family=Material+Icons|Comfortaa:300,400,700", "materialize/materialize";
+
+html, body {
+	height: 100%;
+}
+
+* {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
+}
+
+.nav-wrapper {
+	padding: 0 10px;
+}
+
+.side-nav {
+	a {
+		align-items: center;
+		display: flex;
+	}
+}
+
+.brand-logo {
+	font-family: "Comfortaa";
+	font-weight: 300;
+}
+
+#settings-toggle {
+	border-top: 1px solid #ddd;
+}
+
+.splash {
+	align-items: center;
+	background: $primary-color;
+	bottom: 0;
+	color: #fff;
+	display: flex;
+	//display: none;
+	justify-content: center;
+	left: 0;
+	opacity: 1;
+	position: fixed;
+	right: 0;
+	top: 0;
+	
+	z-index: 9999;
+
+	&.hidden {
+		bottom: calc(100% - 56px);
+		opacity: 0;
+		transition: bottom 300ms ease, opacity 100ms ease 250ms;
+
+		h1.brand-logo {
+			font-size: 30px;
+			transition: all 300ms ease;
+		}
+	}
+}
+
+.switch {
+	margin: 1em 0;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+
+	span[data-ng-class] {
+		opacity: 0;
+		transition: opacity 200ms ease;
+
+		&.visible {
+			opacity: 1;
+		}
+	}
+}
+
+.button-wrap {
+	align-items: center;
+	bottom: 0;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	left: 0;
+	padding: 32px 0;
+	position: absolute;
+	right: 0;
+	top: 56px;
+}
+
+#the-button {
+	$button-color: #eee;
+	background: linear-gradient(to bottom, $button-color, darken($button-color, 10%));
+	border: 0;
+	border-radius: 100px;
+	box-shadow: inset 0 2px 4px 0 rgba(255,255,255,0.5), 0 0 0 2px rgba(0,0,0,0.1), 0 0 5px 5px darken($button-color, 10%), 0 0 20px 20px $button-color, 0 0 10px 30px darken($button-color, 5%), 0 0 0 31px darken($button-color, 10%);
+	height: 200px;
+	position: relative;
+	transition: all 100ms linear;
+	width: 200px;
+
+	&:before {
+		background: linear-gradient(to bottom, darken($button-color, 10%), lighten($button-color, 5%));
+		border-radius: 100%;
+		box-shadow: inset 0 1px 10px 0 rgba(0,0,0,0.01), 0 -1px 4px 0 rgba(255,255,255,0.25);
+		content: "";
+		display: block;
+		height: 75%;
+		left: 12.5%;
+		position: absolute;
+		transition: all 0ms linear;
+		top: 12.5%;
+		width: 75%;
+		z-index: 2;
+	}
+
+	&:after {
+		background: rgba(0,0,0,0.05);
+		border-radius: 100%;
+		content: "";
+		display: block;
+		height: 100%;
+		left: 0;
+		opacity: 0;
+		position: absolute;
+		transition: all 100ms linear;
+		top: 0;
+		width: 100%;
+		z-index: 3;
+	}
+
+	&:hover, &:focus {
+		outline: none;
+
+		&:after {
+			opacity: 1;
+		}
+	}
+
+	&:active, .active {
+		box-shadow: inset 0 2px 4px 0 rgba(255,255,255,0.5), inset 0 0 5px 0 rgba(0,0,0,0.5), 0 0 0 1px rgba(0,0,0,0.1), 0 0 5px 5px darken($button-color, 10%), 0 0 20px 20px $button-color, 0 0 10px 30px darken($button-color, 5%), 0 0 0 31px darken($button-color, 10%);
+	
+		&:before {
+			left: 13.5%;
+			height: 73%;
+			top: 13.5%;
+			width: 73%;
+		}
+	}
+}

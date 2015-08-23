@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="buttonApp">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+	<link rel="stylesheet" href="css/main.css"/>
+	<link rel="manifest" href="manifest.json">
+	<title>button.</title>
+	<script src="js/main.min.js" async></script>
+</head>
+<body>
+	<nav>
+		<div class="nav-wrapper">
+			<a href="#!" class="brand-logo">button.</a>
+			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+			<ul class="side-nav" id="mobile-demo">
+				<li><a href="/#/">Home</a></li>
+				<li><a href="/#/about">Why?</a></li>
+				<li id="settings-toggle"><a href="/#/settings"><i class="material-icons left" aria-hidden="true">settings</i> Settings</a></li>
+			</ul>
+		</div>
+	</nav>
+	<main>
+		<div class="container">
+			<div data-ng-view=""></div>
+		</div>
+	</main>	
+	<div class="splash" aria-hidden="true">
+		<h1 class="brand-logo">button.</h1>
+	</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+node_modules
+dist/*
+!dist/manifest.json
+.sass-cache
+src/js/lib/vendor
