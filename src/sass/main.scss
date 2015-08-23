@@ -94,11 +94,13 @@ html, body {
 	box-shadow: inset 0 2px 4px 0 rgba(255,255,255,0.5), 0 0 0 2px rgba(0,0,0,0.1), 0 0 5px 5px darken($button-color, 10%), 0 0 20px 20px $button-color, 0 0 10px 30px darken($button-color, 5%), 0 0 0 31px darken($button-color, 10%);
 	height: 200px;
 	position: relative;
+	text-align: left;
+	text-indent: -9999em;
 	transition: all 100ms linear;
 	width: 200px;
 
 	&:before {
-		background: linear-gradient(to bottom, darken($button-color, 10%), lighten($button-color, 5%));
+		background: linear-gradient(to bottom, darken($button-color, 5%), $button-color);
 		border-radius: 100%;
 		box-shadow: inset 0 1px 10px 0 rgba(0,0,0,0.01), 0 -1px 4px 0 rgba(255,255,255,0.25);
 		content: "";
@@ -127,15 +129,15 @@ html, body {
 		z-index: 3;
 	}
 
-	&:hover, &:focus {
-		outline: none;
+	// &:hover  {
+	// 	outline: none;
 
-		&:after {
-			opacity: 1;
-		}
-	}
+	// 	&:after {
+	// 		opacity: 1;
+	// 	}
+	// }
 
-	&:active, .active {
+	&:active, &.active {
 		box-shadow: inset 0 2px 4px 0 rgba(255,255,255,0.5), inset 0 0 5px 0 rgba(0,0,0,0.5), 0 0 0 1px rgba(0,0,0,0.1), 0 0 5px 5px darken($button-color, 10%), 0 0 20px 20px $button-color, 0 0 10px 30px darken($button-color, 5%), 0 0 0 31px darken($button-color, 10%);
 	
 		&:before {
