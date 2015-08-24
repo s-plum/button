@@ -1,7 +1,7 @@
 window.$ = window.jQuery = require('jquery');
 require('angular');
 require('angular-route');
-require('hammerjs');
+var Hammer = require('hammerjs');
 require('./lib/vendor/jquery.hammer.js/jquery.hammer');
 require('./lib/vendor/materialize/js/velocity.min');
 require('./lib/vendor/materialize/js/sideNav');
@@ -40,5 +40,13 @@ setTimeout(function() {
 	setTimeout(function() {
 		$('.splash').remove();
 	}, 400);
+
+	$('#the-button').on('touchstart', function() {
+		$(this).addClass('active');
+	})
+	.on('touchend', function() {
+		$(this).removeClass('active');
+	});
+
 }, 2000);
 

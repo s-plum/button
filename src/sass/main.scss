@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/icon?family=Material+Icons|Comfortaa:300,400,700", "materialize/materialize";
+@import "materialize/materialize", "fonts";
 
 html, body {
 	height: 100%;
@@ -18,6 +18,11 @@ html, body {
 		align-items: center;
 		display: flex;
 	}
+}
+
+.drag-target, #sidenav-overlay, .side-nav {
+	transform: translate3d(0,0,0);
+	-webkit-backface-visibility: hidden;
 }
 
 .brand-logo {
@@ -42,6 +47,8 @@ html, body {
 	position: fixed;
 	right: 0;
 	top: 0;
+	transform: translate3d(0,0,0);
+	-webkit-backface-visibility: hidden;
 	
 	z-index: 9999;
 
@@ -98,6 +105,13 @@ html, body {
 	text-indent: -9999em;
 	transition: all 100ms linear;
 	width: 200px;
+	-webkit-backface-visibility: hidden;
+	transform: translate3d(0,0,0);
+
+	&:before, &:after {
+		-webkit-backface-visibility: hidden;
+		transform: translate3d(0,0,0);
+	}
 
 	&:before {
 		background: linear-gradient(to bottom, darken($button-color, 5%), $button-color);
@@ -128,14 +142,6 @@ html, body {
 		width: 100%;
 		z-index: 3;
 	}
-
-	// &:hover  {
-	// 	outline: none;
-
-	// 	&:after {
-	// 		opacity: 1;
-	// 	}
-	// }
 
 	&:active, &.active {
 		box-shadow: inset 0 2px 4px 0 rgba(255,255,255,0.5), inset 0 0 5px 0 rgba(0,0,0,0.5), 0 0 0 1px rgba(0,0,0,0.1), 0 0 5px 5px darken($button-color, 10%), 0 0 20px 20px $button-color, 0 0 10px 30px darken($button-color, 5%), 0 0 0 31px darken($button-color, 10%);

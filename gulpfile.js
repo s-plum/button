@@ -93,7 +93,7 @@ gulp.task('scripts', function() {
     return browserify('./src/js/' + n)
     .bundle()
     .pipe(source(n.replace('.js', '') + '.min.js'))
-    .pipe(gulpIf(shouldMinify, streamify(uglify())))
+    .pipe(gulpIf(shouldMinify, streamify(uglify({mangle:false}))))
     .pipe(gulp.dest('dist/js'))
     .pipe(gulpIf(shouldWatch, livereload()));
     }); 
@@ -142,7 +142,7 @@ gulp.task('serve', buildTasks, function() {
   gulp.src('./dist')
     .pipe(webserver({
       livereload: shouldWatch,
-      port: 3000
+      port: 8080
     }));
 });
 

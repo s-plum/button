@@ -1,5 +1,6 @@
 node_modules
 dist/*
 !dist/manifest.json
+!dist/favicon.ico
 .sass-cache
 src/js/lib/vendor

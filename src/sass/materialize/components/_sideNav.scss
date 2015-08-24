@@ -11,6 +11,8 @@
   background-color: $sidenav-bg-color;
   z-index: 999;
   overflow-y: auto;
+  -webkit-backface-visibility: hidden;
+  transform: translate3d(0,0,0);
 
   @extend .z-depth-1;
   will-change: left;
