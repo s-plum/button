@@ -13,7 +13,6 @@
   ],
   "dependencies": {
     "materialize": "~0.97.0",
-    "jquery": "~2.1.4",
     "jquery.hammer.js": "~2.0.0"
   }
 }
