@@ -32,7 +32,9 @@ buttonApp.config(['$routeProvider',
 $(".button-collapse").sideNav();
 
 $(document).on('click', '.side-nav a', function() {
-	$(".button-collapse").sideNav('hide');
+	setTimeout(function() {
+		$(".button-collapse").sideNav('hide');
+	}, 100);
 });
 
 setTimeout(function() {
