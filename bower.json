@@ -1,10 +1,9 @@
 {
   "name": "button",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "authors": [
     "Plum <stephanie.plumeri@gmail.com>"
   ],
-  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
