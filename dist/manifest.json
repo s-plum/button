@@ -7,11 +7,6 @@
 	"start_url": "http://ec2-52-25-73-167.us-west-2.compute.amazonaws.com:8000",
 	"icons": [
 		{
-			"src": "img/icons/72x72.png",
-			"sizes": "72x72",
-			"type": "image/png"
-		},
-		{
 			"src": "img/icons/36x36.png",
 			"sizes": "36x36",
 			"type": "image/png"
@@ -22,8 +17,23 @@
 			"type": "image/png"
 		},
 		{
+			"src": "img/icons/72x72.png",
+			"sizes": "72x72",
+			"type": "image/png"
+		},
+		{
+			"src": "img/icons/76x76.png",
+			"sizes": "76x76",
+			"type": "image/png"
+		},
+		{
 			"src": "img/icons/96x96.png",
 			"sizes": "96x96",
+			"type": "image/png"
+		},
+		{
+			"src": "img/icons/120x120.png",
+			"sizes": "120x120",
 			"type": "image/png"
 		},
 		{
@@ -37,8 +47,73 @@
 			"type": "image/png"
 		},
 		{
+			"src": "img/icons/152x152.png",
+			"sizes": "152x152",
+			"type": "image/png"
+		},
+		{
+			"src": "img/icons/180x180.png",
+			"sizes": "180x180",
+			"type": "image/png"
+		},
+		{
 			"src": "img/icons/192x192.png",
 			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "img/icons/640x960.png",
+			"sizes": "640x960",
+			"type": "image/png"
+		},
+		{
+			"src": "img/icons/640x1136.png",
+			"sizes": "640x1136",
+			"type": "image/png"
+		},
+		{
+			"src": "img/icons/750x1134.png",
+			"sizes": "750x1134",
+			"type": "image/png"
+		},
+		{
+			"src": "img/icons/768x1024.png",
+			"sizes": "768x1024",
+			"type": "image/png"
+		},
+		{
+			"src": "img/icons/1024x768.png",
+			"sizes": "1024x768",
+			"type": "image/png"
+		},
+		{
+			"src": "img/icons/1024x1024.png",
+			"sizes": "1024x1024",
+			"type": "image/png"
+		},
+		{
+			"src": "img/icons/1242x2208.png",
+			"sizes": "1242x2208",
+			"type": "image/png"
+		},
+		{
+			"src": "img/icons/1334x750.png",
+			"sizes": "1334x750",
+			"type": "image/png"
+		},
+		{
+			"src": "img/icons/1536x2048.png",
+			"sizes": "1536x2048",
+			"type": "image/png"
+		},
+		{
+			"src": "img/icons/2408x1536.png",
+			"sizes": "2408x1536",
+			"type": "image/png"
+		},
+		{
+			"src": "img/icons/2208x1242.png",
+			"sizes": "2208x1242",
 			"type": "image/png"
 		},
 		{
