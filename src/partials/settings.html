@@ -1,9 +1,18 @@
-<div class="switch">
+<div class="switch visible">
 	<span class="flow-text">Button</span>
 	<label>
 	<span data-ng-class="{visible: !config.showButton}">Off</span>
 	<input type="checkbox" name="showButton" data-ng-model="config.showButton"/>
 	<span class="lever"></span>
 	<span data-ng-class="{visible: config.showButton}">On</span>
+	</label>
+</div>
+<div class="switch" data-ng-class="{visible: config.showButton}">
+	<span class="flow-text">Hard Mode</span>
+	<label>
+	<span data-ng-class="{visible: !config.hardMode}">Off</span>
+	<input type="checkbox" name="hardMode" data-ng-model="config.hardMode"/>
+	<span class="lever"></span>
+	<span data-ng-class="{visible: config.hardMode}">On</span>
 	</label>
 </div>

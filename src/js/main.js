@@ -52,3 +52,23 @@ setTimeout(function() {
 
 }, 2000);
 
+//todo - only listen when scope has changed such that config.hardMode === true
+window.addEventListener('deviceorientation', function(e) {
+	var button = document.querySelector('.hard #the-button');
+
+	if (button) {
+		var x = e.beta;
+		var y = e.gamma;
+
+		var orientationClass = '';
+
+		//be a jerk
+		if (x >= 50 && x < 60 && y >= 0 && y < 3) {
+			orientationClass = 'visible';
+		}
+
+		button.className = orientationClass;
+	}
+	
+});
+
