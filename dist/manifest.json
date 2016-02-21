@@ -1,10 +1,10 @@
 {
 	"name": "Button",
 	"short_name": "Button",
-	"scope": "http://*.nomsbase.stephanieplumeri.net",
+	"scope": "http://*.button.stephanieplumeri.net",
 	"display": "standalone",
 	"orientation": "portrait",
-	"start_url": "http://nomsbase.stephanieplumeri.net",
+	"start_url": "http://button.stephanieplumeri.net",
 	"icons": [
 		{
 			"src": "img/icons/36x36.png",
