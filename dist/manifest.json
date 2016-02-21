@@ -1,10 +1,10 @@
 {
 	"name": "Button",
 	"short_name": "Button",
-	"scope": "http://*.ec2-52-25-73-167.us-west-2.compute.amazonaws.com",
+	"scope": "http://*.nomsbase.stephanieplumeri.net",
 	"display": "standalone",
 	"orientation": "portrait",
-	"start_url": "http://ec2-52-25-73-167.us-west-2.compute.amazonaws.com:8000",
+	"start_url": "http://nomsbase.stephanieplumeri.net",
 	"icons": [
 		{
 			"src": "img/icons/36x36.png",
